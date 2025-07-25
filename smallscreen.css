@@ -1,0 +1,403 @@
+/* light-violet : #DEDAFF */
+/* dark-violer : #8F7FEE */
+
+
+/* Common settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Noto Sans';
+    font-size: 2vw;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.lilac-bg {
+    background-color: #F5F4FF;
+}
+
+nav {
+    position: sticky;
+    display: flex;
+    top:0;
+    background-color: #DEDAFF;
+    padding: 1vw;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo > img {
+    height: 20px
+}
+
+.logo {
+    margin-right: auto;
+}
+
+nav > a {
+    color: black;
+    font-size: 3vw;
+    text-decoration: none;
+    padding-right: 1vw;
+}
+
+nav > a:hover {
+    color: #ada6f1;
+}
+
+footer {
+    background-color:#DEDAFF;
+    text-align: center;
+    padding: 2vw 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer > a > img {
+    width: 5vw;
+}
+
+h1 {
+    margin-top: 1vw;
+    margin-left: 3vw;
+    font-size: 4vw;
+    color: #8F7FEE;
+    border: 2px solid #DEDAFF;
+    max-width: fit-content;
+    padding-right: 10vw;
+    padding-left: 5vw;
+    border-radius: 20px;
+}
+
+/* CV page */
+.index {
+    margin-left: 4vw;
+    padding-top: 2vh;
+    display: flex;
+}
+
+.index > a{
+    color: #8F7FEE;
+    text-decoration: none;
+    flex-grow: 1;
+    font-size: 3vw;
+}
+
+.index > a:hover {
+    color: #DEDAFF;
+}
+
+.dades_personals {
+    margin: 2vh 0;
+    padding: 1vh 3vw;
+}
+
+.dades_personals > p {
+    font-size: 2.5vw;
+}
+
+h2 {
+    font-size: 4vw;
+    color: #8F7FEE;
+    padding-bottom: 1vw;
+    padding-left: 1vw;
+}
+
+.idiomes {
+    margin: 0 2vw;
+}
+
+table {
+    width: 100%;
+    border: 2px solid #DEDAFF;
+    border-radius:6px;
+}
+
+td, th {
+    border-left: 2px solid #DEDAFF;
+    border-top: 2px solid #DEDAFF;
+    text-align: center;
+}
+
+th {
+    border-top: none;
+}
+
+td:first-child, th:first-child {
+    border-left: none;
+}
+
+.estudis {
+    margin: 2vh 0 0 0;
+    padding: 1vh 2vw;
+}
+
+.estudis > ul >li, .estudis > ul > li > strong, .laboral > ul > li, .laboral > ul >li > strong, .laboral > ul > li > i {
+    font-size: 2.5vw;
+}
+
+.laboral {
+    padding: 2vh 2vw;
+}
+
+/* Index page */
+.flex-seccio-hola {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.seccio-hola {
+    margin-top: 2vh;
+    padding: 1vh 2vw 2vw;
+}
+
+.seccio-hola img {
+    border-radius: 10px;
+    margin-left: 1vw;
+}
+
+.flex-seccio-hola  > div > p {
+    font-size: 3vw;
+    padding: 3vw 5vw;
+}
+
+.targetes-container {
+    padding: 3vw 3vw 2vw 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.targetes-container > h2 {
+    color: #8F7FEE;
+    align-self: flex-start;
+}
+
+.grid-container {
+    margin-top: 2vw;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5vw;
+}
+
+.targeta {
+    border: 2px solid #ada6f1;
+    border-radius: 8px;
+    padding: 2vw;
+    display: grid;
+    text-decoration: none;
+}
+
+.targeta > h3 {
+    font-size: 3vw;
+    color: #ada6f1;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.targeta > p {
+    font-size: 3vw;
+    color: #525252;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.targeta > img {
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.seccio-coneixements {
+    margin: 2vh 0;
+    padding: 2vh;
+}
+
+.coneixements {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.coneixements > img {
+    max-width: 10vw;
+}
+
+.les-meves-aficions {
+    margin: 2vh 2vw;
+    display: grid;
+    gap: 1vw;
+    justify-content: center;
+}
+
+.grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6 {
+    border: 2px solid #DEDAFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: c;
+    padding: 1.5vw;
+    min-width: 50vw;
+}
+
+.grid-item1 > p, .grid-item > p, .grid-item3 > p, .grid-item4 > p, .grid-item5 > p, .grid-item6 > p {
+    font-size: 3vw;
+}
+
+#les_meves_aficions {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+}
+.grid-item1 {
+    grid-column: 1;
+    grid-row: 2;
+}
+.grid-item2 {
+    grid-column: 1;
+    grid-row: 3;
+}
+.grid-item3 {
+    grid-column: 1;
+    grid-row: 4;
+}
+.grid-item4 {
+    grid-column: 1;
+    grid-row: 5;
+}
+.grid-item5 {
+    grid-column: 1;
+    grid-row: 6;
+}
+.grid-item6 {
+    grid-column: 1;
+    grid-row: 7;
+}
+
+/* Contacte */
+
+form {
+    padding: 4vw;
+}
+
+form > p {
+    font-size: 2.5vw;
+    color: #8F7FEE;
+}
+
+form > input {
+    margin-top: 0.5vw;
+    padding-right: 70%
+}
+
+.boto-enviar {
+    font-size: 2.5vw;
+    padding: 0;
+    padding: 0 1vw;
+    color: #8F7FEE;
+    background-color: white;
+    border-color: #8F7FEE;
+    border-radius: 6px;
+}
+
+/* Cartes */
+
+#cards-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    margin: 2vw;
+}
+
+.card {
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    padding: 1rem;
+    border-radius: 12px;
+    min-height: fit-content;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.card-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* Memory */
+
+#cards-container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.card {
+    perspective: 800px;
+    cursor: pointer;
+    width: 100%;
+    height: 140px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-front {
+    background-color: #222;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    background-color: #fff;
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+}
+
+.card.matched .card-back {
+    background-color: #a6e6a6; /* light green */
+}
